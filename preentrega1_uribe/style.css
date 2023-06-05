@@ -1,0 +1,21 @@
+/* Estilos CSS para mejorar la apariencia */
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 150px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }

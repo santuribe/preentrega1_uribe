@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cotizador de seguros </title>
+</head>
+<body>
+  <h1>Cotizador de Seguros</h1>
+  
+  <h2>Selecciona los servicios:</h2>
+  
+  <label>
+    <input type="checkbox" id="servicio1" value="50"> Servicio 1 (costo: $50)
+  </label>
+  
+  <label>
+    <input type="checkbox" id="servicio2" value="75"> Servicio 2 (costo: $75)
+  </label>
+  
+  <label>
+    <input type="checkbox" id="servicio3" value="100"> Servicio 3 (costo: $100)
+  </label>
+  
+  <h2>Pagos en cuotas:</h2>
+  
+  <label>
+    Monto total: $
+    <input type="number" id="montoTotal" min="0">
+  </label>
+  
+  <label>
+    Cantidad de cuotas:
+    <input type="number" id="cuotas" min="0">
+  </label>
+  
+  <h2>Valor final del producto:</h2>
+  
+  <label>
+    Precio base: $
+    <input type="number" id="precioBase" min="0">
+  </label>
+  
+  <label>
+    Impuestos (%):
+    <input type="number" id="impuestos" min="0" max="100">
+  </label>
+  
+  <label>
+    Descuentos (%):
+    <input type="number" id="descuentos" min="0" max="100">
+  </label>
+  
+  <button onclick="calcularCotizacion()">Calcular Cotización</button>
+  
+  <div id="resultado"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
