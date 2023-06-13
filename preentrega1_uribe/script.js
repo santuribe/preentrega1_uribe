@@ -1,54 +1,47 @@
-function calcularCotizacion() {
-    // Obtener los valores ingresados por el usuario
-    const servicio1 = document.getElementById("servicio1").checked;
-    const servicio2 = document.getElementById("servicio2").checked;
-    const servicio3 = document.getElementById("servicio3").checked;
+// SIMULADOR INTERACTIVO PRIMERA PRE-ENTREGA
 
-    const montoTotal = parseFloat(document.getElementById("montoTotal").value);
-    const cuotas = parseInt(document.getElementById("cuotas").value);
 
-    const precioBase = parseFloat(document.getElementById("precioBase").value);
-    const impuestos = parseFloat(document.getElementById("impuestos").value);
-    const descuentos = parseFloat(document.getElementById("descuentos").value);
+let alumno = String(prompt("Ingrese el nombre del alumno"))
 
-    // Calcular el costo total de los servicios seleccionados
-    let costoTotal = 0;
 
-    if (servicio1) {
-        costoTotal += 50;
+function calcularNotaFinal(nota1, nota2, nota3) {
+
+    let notaFinal = (nota1 + nota2 + nota3) / 3;
+
+    return notaFinal.toFixed(2);
+}
+
+// Bucle para pedir las cuatro notas del alumno
+
+for (let i = 1; i <= 4; i++) {
+
+    let nota = parseFloat(prompt("Ingresa la nota del desafio " + i + " de " + alumno + ":"));
+
+
+    if (nota < 0 || nota > 10) {
+        alert("La nota debe estar entre 0 y 10");
+        nota = parseInt(prompt("Ingresa la nota del desafio " + i + " de " + alumno + ":"));
     }
 
-    if (servicio2) {
-        costoTotal += 75;
+
+    else if (i === 1) {
+        var nota1 = nota;
+    } else if (i === 2) {
+        var nota2 = nota;
+    } else {
+        var nota3 = nota;
     }
+}
 
-    if (servicio3) {
-        costoTotal += 100;
-    }
+let notaFinal = calcularNotaFinal(nota1, nota2, nota3);
 
-    // Calcular el costo total con pagos en cuotas
-    let cuotaMensual = 0;
+//nota final del alumno por pantalla
 
-    if (montoTotal > 0 && cuotas > 0) {
-        cuotaMensual = montoTotal / cuotas;
-    }
+if (notaFinal <= 7) {
 
-    // Calcular el valor final del producto
-    let valorFinal = precioBase;
+    alert("La nota final de " + alumno + " es: " + notaFinal + ". A reprobado, debe reforzar");
 
-    if (impuestos > 0) {
-        valorFinal += (precioBase * impuestos) / 100;
-    }
+} else if (notaFinal >= 8 & notaFinal <= 10) {
 
-    if (descuentos > 0) {
-        valorFinal -= (precioBase * descuentos) / 100;
-    }
-
-    // Mostrar los resultados
-    const resultadoDiv = document.getElementById("resultado");
-    resultadoDiv.innerHTML = `
-      <p>Costo Total de los Servicios Seleccionados: $${costoTotal}</p>
-      <p>Cuota Mensual: $${cuotaMensual.toFixed(2)}</p>
-      <p>Valor Final del Producto: $${valorFinal.toFixed(2)}</p>
-    `;
+    alert("La nota final de " + alumno + " es: " + notaFinal + ". Aprobado, que buen trabajo");
 }
