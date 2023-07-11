@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: beige;
+    font-family: "Cabin", sans-serif;
+    background-image: url(../img/circuit.png) ;
+    background-size: 400px;
+    font-size: 1.6rem;
+  }
+  
+  h1 {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 5px;
+    font-size: 4rem;
+    background-color: yellowgreen;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  
+  p {
+    font-size: 2rem;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  .h2_carrito {
+    background-color: yellow;
+    font-style: italic;
+  }
+  
+  .contenedorDescripcion {
+    display: contents;
+  }
+  
+  .imgProductos {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  
+  .botonContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .carro{
+    background-color: white;
+
+  }
+
+  
+  .botonCards {
+    color: #fafafa;
+    background-color: #008CBA;
+    font-size: 1.6rem;
+    box-shadow: 1.5px 1.5px 5px #000;
+  }
+  
+  .botonCards:hover {
+    color: #fafafa;
+    background-color: #22afde;
+  }
+  
+  .borde-superior {
+    border-top: 1px solid gainsboro;
+    font-size: 2.5rem;
+  }
+  
