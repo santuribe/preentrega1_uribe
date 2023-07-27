@@ -1,0 +1,13 @@
+[
+    {"id": 1, "nombre":"Delay Flamma", "precio": 2390, "img": "img/analogdelayflamma.jpg", "cantidad": 1},
+    {"id": 2, "nombre":"Boost Blackstar", "precio": 2390, "img": "img/boostblack.jpg", "cantidad": 1},
+    {"id": 3, "nombre":"Chorus Nux", "precio": 2390, "img": "img/chorusnux.jpg", "cantidad": 1},
+    {"id": 4, "nombre":"Compressor Behringer", "precio": 2390, "img": "img/compressorsust.jpg", "cantidad": 1},
+    {"id": 5, "nombre":"Graphic Equalizer Behringer", "precio": 2390, "img": "img/graphiceq.jpg", "cantidad": 1},
+    {"id": 6, "nombre":"Hotone Wood", "precio": 2390, "img": "img/hotonewood.jpg", "cantidad": 1},
+    {"id": 7, "nombre":"Loop Flamma", "precio": 2790, "img": "img/loopflamma.jpg", "cantidad": 1},
+    {"id": 8, "nombre":"Metal Blackstar", "precio": 2790, "img": "img/metalblackstar.jpg", "cantidad": 1},
+    {"id": 9, "nombre":"MultiFx Behringer", "precio": 11900, "img": "img/multifxbeh.jpg", "cantidad": 1},
+    {"id": 10, "nombre":"Overdrive Flamma", "precio": 24990, "img": "img/overdriveflamma.jpg", "cantidad": 1},
+    {"id": 11, "nombre":"Reverb Flamma", "precio": 34900, "img": "img/reverbflamma.jpg", "cantidad": 1}
+]
